@@ -201,7 +201,7 @@ services:
     restart: always
     environment:
       POSTGRESQL_USERNAME: postgres
-      POSTGRESQL_PASSWORD: senha
+      POSTGRESQL_PASSWORD: r45796yv3bhub9w4f3ga3ikxmxos648r
     networks:
       - ecosystem_network
     ports:
@@ -238,14 +238,6 @@ Implementação alternativa da API do servidor Bitwarden escrita em Rust e compa
 
 ```bash
 CREATE DATABASE vaultwarden;
-```
-
-2- Crie um usuário e garanta os previlégios:
-
-```bash
-CREATE USER vaultwarden WITH ENCRYPTED PASSWORD '7223y2i9ruxqpaaai539ww454n8gi3xq';
-GRANT ALL ON DATABASE vaultwarden TO vaultwarden;
-GRANT all privileges ON database vaultwarden TO vaultwarden;
 ```
 
 ### Passo 02: Subindo stack no Portainer
